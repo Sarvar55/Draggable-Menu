@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draggable-Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <div class="nav ">
+    <div class="toogle"></div>
+    <ul>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <span class="title">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <span class="title">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-comment"></i></span>
+          <span class="title">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-cog"></i></span>
+          <span class="title">Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-long-arrow-alt-down"></i></span>
+          <span class="title">Password</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="title">Sign out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    document.querySelector('.toogle').addEventListener('click', function () {
+      this.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(".nav").draggable();
+    });
+  </script>
+
+</body>
+
+</html>
