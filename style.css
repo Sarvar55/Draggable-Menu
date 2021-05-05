@@ -19,7 +19,7 @@ body{
   position: relative;
   width: 50px;
   height: 50px;
-  background: #232526;  /* fallback for old browsers */
+  background: #232526; 
   background: -webkit-linear-gradient(to right, #414345, #232526);  
   background: linear-gradient(to right, #414345, #232526); 
   transition: width 0.8s, height 0.8s;
@@ -31,7 +31,7 @@ body{
 .nav.active{
   width: 250px;
   height: 350px;
-  background: #232526;  /* fallback for old browsers */
+  background: #232526; 
   background: -webkit-linear-gradient(to right, #414345, #232526);  
   background: linear-gradient(to right, #414345, #232526); 
   position: relative;
