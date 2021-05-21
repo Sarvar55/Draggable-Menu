@@ -86,7 +86,7 @@ body{
 }
 .nav ul li:hover{
   background: #DC2424;  
-background: -webkit-linear-gradient(to left, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to left, #4A569D, #DC2424); 
 background: linear-gradient(to left, #4A569D, #DC2424); 
 }
 .nav ul li a{
